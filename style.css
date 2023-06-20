@@ -1,0 +1,97 @@
+/* Instalando a fonte */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Definindo estilos iniciais para todos os elementos da página.*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+    font-family: "Poppins", sans-serif;
+
+        
+}
+
+.topo{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.topo span {
+    color: #3cbd87;
+    font-size: 18px;
+}
+
+main{
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    /* Tranformando em um container flexivel */
+    display: flex;
+    /*posicionando os elementos no centro*/
+    justify-content: center;
+}
+
+.container{
+    /* definindo uma largura máxima */
+    max-width: 1024px;
+    /* Tranformando em um container flexivel */
+    display: flex;
+    /* Definindo quebra de linha */
+    flex-wrap: wrap;
+    /* Distribuindo os elementos no container e adicionando uma margem */
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.card-produto{
+    /* Flex-grow 1, Flex-shrink 1 (valor padrão), flex-basis 300px */
+    flex: 1 1 300px;
+    border-radius: 4px;
+    /* adicionando efeito sombra no elemento */
+    box-shadow: 1px 1px 10px 1px gray;
+}
+
+.container-imagem{
+    height: 250px;
+}
+
+.container-imagem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.container-info{
+    padding: 0px 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-info h3{
+    font-size: 18px;
+}
+
+.container-preco{
+    padding: 10px;
+    border-top: 1px solid #c9c4c4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-icone{
+    padding: 5px;
+    border: 1px solid #c9c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.container-icone:hover{
+   background-color: #c9c4c4;
+   transition: 50ms;
+}
